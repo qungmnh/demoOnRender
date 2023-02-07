@@ -4,6 +4,11 @@ var app = express()
 app.get('/', function(req,res){
     res.writeHead(200, { 'Content-Type': 'text/html' });
     res.write('<html><body><p>This is home Page.</p></body></html>');
+    
+    <button id="go-back">Go back!</button>
+        document.getElementById('go-back').addEventListener('click', () => {
+        history.back();
+    });
     res.end();
 })
 
